@@ -1,0 +1,368 @@
+2022-12-11 00:38:20,702 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 00:39:16,101 - utils.py[line:54] - INFO: best_unseen  0.6367| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.4024| obj_acc  0.4913| 
+2022-12-11 00:52:41,299 - utils.py[line:54] - INFO: best_unseen  0.7775| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.5511| obj_acc  0.6734| 
+2022-12-11 00:52:41,301 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 00:53:12,287 - utils.py[line:54] - INFO: best_unseen  0.5901| best_seen  0.6271| AUC  0.3143| best_hm  0.4899| attr_acc  0.3597| obj_acc  0.7922| 
+2022-12-11 00:53:12,289 - utils.py[line:54] - INFO: Loss average on val dataset: 2.59375
+2022-12-11 00:53:38,836 - utils.py[line:54] - INFO: best_unseen  0.5923| best_seen  0.6745| AUC  0.3089| best_hm  0.4501| attr_acc  0.5041| obj_acc  0.7227| 
+2022-12-11 00:53:38,839 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 00:54:05,134 - utils.py[line:54] - INFO: best_unseen  0.5923| best_seen  0.6745| AUC  0.3089| best_hm  0.4501| attr_acc  0.5041| obj_acc  0.7227| 
+2022-12-11 01:07:41,927 - utils.py[line:54] - INFO: best_unseen  0.7654| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.5522| obj_acc  0.7353| 
+2022-12-11 01:07:41,929 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 01:08:11,768 - utils.py[line:54] - INFO: best_unseen  0.5896| best_seen  0.6431| AUC  0.3269| best_hm  0.4993| attr_acc  0.3556| obj_acc  0.8248| 
+2022-12-11 01:08:11,770 - utils.py[line:54] - INFO: Loss average on val dataset: 2.57421875
+2022-12-11 01:08:39,245 - utils.py[line:54] - INFO: best_unseen  0.5981| best_seen  0.6725| AUC  0.3286| best_hm  0.479| attr_acc  0.5326| obj_acc  0.722| 
+2022-12-11 01:08:39,247 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 01:09:05,655 - utils.py[line:54] - INFO: best_unseen  0.5981| best_seen  0.6725| AUC  0.3286| best_hm  0.479| attr_acc  0.5326| obj_acc  0.722| 
+2022-12-11 01:22:53,718 - utils.py[line:54] - INFO: best_unseen  0.7728| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.5401| obj_acc  0.7954| 
+2022-12-11 01:22:53,719 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 01:23:23,232 - utils.py[line:54] - INFO: best_unseen  0.6068| best_seen  0.6294| AUC  0.3316| best_hm  0.4976| attr_acc  0.3597| obj_acc  0.8199| 
+2022-12-11 01:23:23,234 - utils.py[line:54] - INFO: Loss average on val dataset: 2.515625
+2022-12-11 01:23:50,808 - utils.py[line:54] - INFO: best_unseen  0.623| best_seen  0.6598| AUC  0.3281| best_hm  0.4651| attr_acc  0.5196| obj_acc  0.7282| 
+2022-12-11 01:23:50,810 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 01:24:17,292 - utils.py[line:54] - INFO: best_unseen  0.623| best_seen  0.6598| AUC  0.3281| best_hm  0.4651| attr_acc  0.5196| obj_acc  0.7282| 
+2022-12-11 01:38:08,360 - utils.py[line:54] - INFO: best_unseen  0.693| best_seen  0.2199| AUC  0.1394| best_hm  0.2978| attr_acc  0.4456| obj_acc  0.7585| 
+2022-12-11 01:38:08,362 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 01:38:40,993 - utils.py[line:54] - INFO: best_unseen  0.6389| best_seen  0.6123| AUC  0.3648| best_hm  0.5397| attr_acc  0.364| obj_acc  0.8186| 
+2022-12-11 01:38:40,996 - utils.py[line:54] - INFO: Loss average on val dataset: 2.6484375
+2022-12-11 01:39:07,007 - utils.py[line:54] - INFO: best_unseen  0.6293| best_seen  0.6491| AUC  0.3406| best_hm  0.4818| attr_acc  0.4832| obj_acc  0.7196| 
+2022-12-11 01:53:23,587 - utils.py[line:54] - INFO: best_unseen  0.7591| best_seen  0.156| AUC  0.1057| best_hm  0.2298| attr_acc  0.4335| obj_acc  0.7392| 
+2022-12-11 01:53:23,589 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 01:53:55,870 - utils.py[line:54] - INFO: best_unseen  0.6359| best_seen  0.6203| AUC  0.3634| best_hm  0.5382| attr_acc  0.3572| obj_acc  0.8273| 
+2022-12-11 01:53:55,872 - utils.py[line:54] - INFO: Loss average on val dataset: 2.599609375
+2022-12-11 01:54:26,000 - utils.py[line:54] - INFO: best_unseen  0.6235| best_seen  0.6579| AUC  0.3478| best_hm  0.4863| attr_acc  0.4825| obj_acc  0.708| 
+2022-12-11 02:11:57,360 - utils.py[line:54] - INFO: best_unseen  0.7479| best_seen  0.1064| AUC  0.07| best_hm  0.1704| attr_acc  0.4401| obj_acc  0.7687| 
+2022-12-11 02:11:57,362 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 02:12:33,507 - utils.py[line:54] - INFO: best_unseen  0.641| best_seen  0.5952| AUC  0.3537| best_hm  0.5348| attr_acc  0.3547| obj_acc  0.8186| 
+2022-12-11 02:12:33,509 - utils.py[line:54] - INFO: Loss average on val dataset: 2.56640625
+2022-12-11 02:13:04,348 - utils.py[line:54] - INFO: best_unseen  0.6383| best_seen  0.6579| AUC  0.3597| best_hm  0.5| attr_acc  0.4887| obj_acc  0.6946| 
+2022-12-11 02:32:28,683 - utils.py[line:54] - INFO: best_unseen  0.7573| best_seen  0.0993| AUC  0.0658| best_hm  0.162| attr_acc  0.4302| obj_acc  0.7505| 
+2022-12-11 02:32:28,686 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 02:33:04,245 - utils.py[line:54] - INFO: best_unseen  0.6448| best_seen  0.618| AUC  0.3704| best_hm  0.5509| attr_acc  0.3622| obj_acc  0.8223| 
+2022-12-11 02:33:04,247 - utils.py[line:54] - INFO: Loss average on val dataset: 2.580078125
+2022-12-11 02:33:34,449 - utils.py[line:54] - INFO: best_unseen  0.6436| best_seen  0.6716| AUC  0.3723| best_hm  0.514| attr_acc  0.4794| obj_acc  0.7152| 
+2022-12-11 02:52:04,389 - utils.py[line:54] - INFO: best_unseen  0.7497| best_seen  0.0733| AUC  0.0483| best_hm  0.1273| attr_acc  0.4349| obj_acc  0.7524| 
+2022-12-11 02:52:04,391 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 02:52:39,096 - utils.py[line:54] - INFO: best_unseen  0.6453| best_seen  0.5986| AUC  0.3595| best_hm  0.5433| attr_acc  0.3528| obj_acc  0.8233| 
+2022-12-11 02:52:39,098 - utils.py[line:54] - INFO: Loss average on val dataset: 2.64453125
+2022-12-11 02:53:11,323 - utils.py[line:54] - INFO: best_unseen  0.6404| best_seen  0.6588| AUC  0.3628| best_hm  0.5056| attr_acc  0.4698| obj_acc  0.7025| 
+2022-12-11 03:11:55,463 - utils.py[line:54] - INFO: best_unseen  0.7375| best_seen  0.0898| AUC  0.0565| best_hm  0.1494| attr_acc  0.4252| obj_acc  0.7397| 
+2022-12-11 03:11:55,465 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 03:12:22,253 - utils.py[line:54] - INFO: best_unseen  0.6461| best_seen  0.5998| AUC  0.3602| best_hm  0.5421| attr_acc  0.3587| obj_acc  0.8136| 
+2022-12-11 03:12:22,255 - utils.py[line:54] - INFO: Loss average on val dataset: 2.677734375
+2022-12-11 03:12:46,014 - utils.py[line:54] - INFO: best_unseen  0.6483| best_seen  0.6774| AUC  0.3787| best_hm  0.5171| attr_acc  0.4925| obj_acc  0.71| 
+2022-12-11 03:28:45,794 - utils.py[line:54] - INFO: best_unseen  0.739| best_seen  0.0816| AUC  0.0501| best_hm  0.134| attr_acc  0.439| obj_acc  0.7452| 
+2022-12-11 03:28:45,796 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 03:29:12,132 - utils.py[line:54] - INFO: best_unseen  0.641| best_seen  0.61| AUC  0.3638| best_hm  0.5463| attr_acc  0.3606| obj_acc  0.8186| 
+2022-12-11 03:29:12,134 - utils.py[line:54] - INFO: Loss average on val dataset: 2.701171875
+2022-12-11 03:29:35,316 - utils.py[line:54] - INFO: best_unseen  0.6415| best_seen  0.6716| AUC  0.3691| best_hm  0.5087| attr_acc  0.4832| obj_acc  0.7128| 
+2022-12-11 03:46:00,385 - utils.py[line:54] - INFO: best_unseen  0.7386| best_seen  0.0757| AUC  0.0475| best_hm  0.129| attr_acc  0.4404| obj_acc  0.7477| 
+2022-12-11 03:46:00,387 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 03:46:25,985 - utils.py[line:54] - INFO: best_unseen  0.6427| best_seen  0.5918| AUC  0.3506| best_hm  0.5365| attr_acc  0.355| obj_acc  0.8152| 
+2022-12-11 03:46:25,987 - utils.py[line:54] - INFO: Loss average on val dataset: 2.744140625
+2022-12-11 03:46:49,440 - utils.py[line:54] - INFO: best_unseen  0.6436| best_seen  0.6745| AUC  0.3693| best_hm  0.5057| attr_acc  0.4883| obj_acc  0.7052| 
+2022-12-11 04:03:55,564 - utils.py[line:54] - INFO: best_unseen  0.74| best_seen  0.0839| AUC  0.053| best_hm  0.1412| attr_acc  0.439| obj_acc  0.7386| 
+2022-12-11 04:03:55,566 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 04:04:21,808 - utils.py[line:54] - INFO: best_unseen  0.6367| best_seen  0.6157| AUC  0.3642| best_hm  0.5486| attr_acc  0.3637| obj_acc  0.8199| 
+2022-12-11 04:04:21,810 - utils.py[line:54] - INFO: Loss average on val dataset: 2.70703125
+2022-12-11 04:04:45,577 - utils.py[line:54] - INFO: best_unseen  0.6457| best_seen  0.6823| AUC  0.3788| best_hm  0.5176| attr_acc  0.489| obj_acc  0.7138| 
+2022-12-11 04:22:36,107 - utils.py[line:54] - INFO: best_unseen  0.7361| best_seen  0.0804| AUC  0.0491| best_hm  0.1341| attr_acc  0.434| obj_acc  0.7364| 
+2022-12-11 04:22:36,109 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 04:23:02,475 - utils.py[line:54] - INFO: best_unseen  0.6359| best_seen  0.61| AUC  0.3618| best_hm  0.5481| attr_acc  0.3619| obj_acc  0.8177| 
+2022-12-11 04:23:02,479 - utils.py[line:54] - INFO: Loss average on val dataset: 2.712890625
+2022-12-11 04:23:25,991 - utils.py[line:54] - INFO: best_unseen  0.6409| best_seen  0.6755| AUC  0.3705| best_hm  0.511| attr_acc  0.4804| obj_acc  0.7124| 
+2022-12-11 04:41:54,396 - utils.py[line:54] - INFO: best_unseen  0.7354| best_seen  0.0603| AUC  0.0365| best_hm  0.106| attr_acc  0.4307| obj_acc  0.7433| 
+2022-12-11 04:41:54,398 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 04:42:19,955 - utils.py[line:54] - INFO: best_unseen  0.6389| best_seen  0.6157| AUC  0.3665| best_hm  0.55| attr_acc  0.3637| obj_acc  0.8186| 
+2022-12-11 04:42:19,957 - utils.py[line:54] - INFO: Loss average on val dataset: 2.72265625
+2022-12-11 04:42:43,330 - utils.py[line:54] - INFO: best_unseen  0.6457| best_seen  0.6794| AUC  0.3742| best_hm  0.5125| attr_acc  0.4804| obj_acc  0.7124| 
+2022-12-11 05:02:05,121 - utils.py[line:54] - INFO: best_unseen  0.7393| best_seen  0.0626| AUC  0.0386| best_hm  0.1096| attr_acc  0.4307| obj_acc  0.7364| 
+2022-12-11 05:02:05,123 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 05:02:31,252 - utils.py[line:54] - INFO: best_unseen  0.6406| best_seen  0.6123| AUC  0.3655| best_hm  0.5502| attr_acc  0.3656| obj_acc  0.8177| 
+2022-12-11 05:02:31,254 - utils.py[line:54] - INFO: Loss average on val dataset: 2.69140625
+2022-12-11 05:02:55,238 - utils.py[line:54] - INFO: best_unseen  0.6462| best_seen  0.6823| AUC  0.3768| best_hm  0.515| attr_acc  0.4883| obj_acc  0.7124| 
+2022-12-11 05:22:54,378 - utils.py[line:54] - INFO: best_unseen  0.7332| best_seen  0.0697| AUC  0.0427| best_hm  0.1171| attr_acc  0.4332| obj_acc  0.7312| 
+2022-12-11 05:22:54,380 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 05:23:20,121 - utils.py[line:54] - INFO: best_unseen  0.6406| best_seen  0.6123| AUC  0.3642| best_hm  0.5494| attr_acc  0.3662| obj_acc  0.8161| 
+2022-12-11 05:23:20,123 - utils.py[line:54] - INFO: Loss average on val dataset: 2.7109375
+2022-12-11 05:23:44,121 - utils.py[line:54] - INFO: best_unseen  0.6473| best_seen  0.6823| AUC  0.3763| best_hm  0.5159| attr_acc  0.487| obj_acc  0.71| 
+2022-12-11 05:44:19,544 - utils.py[line:54] - INFO: best_unseen  0.7368| best_seen  0.0816| AUC  0.0485| best_hm  0.1375| attr_acc  0.4373| obj_acc  0.7406| 
+2022-12-11 05:44:19,546 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 05:44:49,112 - utils.py[line:54] - INFO: best_unseen  0.6423| best_seen  0.6032| AUC  0.3575| best_hm  0.5452| attr_acc  0.364| obj_acc  0.8143| 
+2022-12-11 05:44:49,114 - utils.py[line:54] - INFO: Loss average on val dataset: 2.712890625
+2022-12-11 05:45:13,521 - utils.py[line:54] - INFO: best_unseen  0.6457| best_seen  0.6794| AUC  0.3729| best_hm  0.512| attr_acc  0.4883| obj_acc  0.7066| 
+2022-12-11 06:06:44,994 - utils.py[line:54] - INFO: best_unseen  0.7343| best_seen  0.0827| AUC  0.0498| best_hm  0.1375| attr_acc  0.4324| obj_acc  0.7417| 
+2022-12-11 06:06:44,996 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 06:07:11,253 - utils.py[line:54] - INFO: best_unseen  0.6414| best_seen  0.6021| AUC  0.3594| best_hm  0.5461| attr_acc  0.364| obj_acc  0.8146| 
+2022-12-11 06:07:11,255 - utils.py[line:54] - INFO: Loss average on val dataset: 2.705078125
+2022-12-11 06:07:34,236 - utils.py[line:54] - INFO: best_unseen  0.6531| best_seen  0.6784| AUC  0.377| best_hm  0.5172| attr_acc  0.4883| obj_acc  0.7107| 
+2022-12-11 06:29:55,089 - utils.py[line:54] - INFO: best_unseen  0.7246| best_seen  0.0591| AUC  0.0347| best_hm  0.1027| attr_acc  0.4305| obj_acc  0.7364| 
+2022-12-11 06:29:55,090 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 06:30:20,865 - utils.py[line:54] - INFO: best_unseen  0.6397| best_seen  0.6078| AUC  0.3609| best_hm  0.5453| attr_acc  0.3656| obj_acc  0.8155| 
+2022-12-11 06:30:20,867 - utils.py[line:54] - INFO: Loss average on val dataset: 2.72265625
+2022-12-11 06:30:44,565 - utils.py[line:54] - INFO: best_unseen  0.6494| best_seen  0.6764| AUC  0.373| best_hm  0.5124| attr_acc  0.4849| obj_acc  0.7076| 
+2022-12-11 06:54:09,270 - utils.py[line:54] - INFO: best_unseen  0.7235| best_seen  0.0721| AUC  0.0414| best_hm  0.1201| attr_acc  0.4272| obj_acc  0.7337| 
+2022-12-11 06:54:09,272 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 06:54:38,470 - utils.py[line:54] - INFO: best_unseen  0.6414| best_seen  0.6089| AUC  0.3637| best_hm  0.5481| attr_acc  0.3662| obj_acc  0.8155| 
+2022-12-11 06:54:38,472 - utils.py[line:54] - INFO: Loss average on val dataset: 2.728515625
+2022-12-11 06:55:03,977 - utils.py[line:54] - INFO: best_unseen  0.6473| best_seen  0.6745| AUC  0.3714| best_hm  0.5118| attr_acc  0.4825| obj_acc  0.7086| 
+2022-12-11 06:55:03,979 - utils.py[line:54] - INFO: Evaluating test dataset on Closed World
+2022-12-11 06:55:28,482 - utils.py[line:54] - INFO: best_unseen  0.623| best_seen  0.6598| AUC  0.3281| best_hm  0.4651| attr_acc  0.5196| obj_acc  0.7282| 
+2022-12-11 06:55:36,202 - utils.py[line:54] - INFO: done!
+2022-12-11 08:02:36,448 - utils.py[line:54] - INFO: Namespace(lr=0.0001, dataset='mit-states', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=128, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/mit-states/dfsp', save_every_n=5, save_model=False, load_model='data/model/mit-states/dfsp/SDZSL_best.pt', seed=0, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/mit-states', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 08:03:59,869 - utils.py[line:54] - INFO: best_unseen  0.5116| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.2925| obj_acc  0.4899| 
+2022-12-11 08:20:17,167 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 08:21:16,993 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 08:25:22,951 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:25:52,747 - utils.py[line:54] - INFO: best_unseen  0.5999| best_seen  0.6556| AUC  0.3292| best_hm  0.4736| attr_acc  0.3625| obj_acc  0.8102| 
+2022-12-11 08:25:52,749 - utils.py[line:54] - INFO: Loss average on val dataset: 2.703125
+2022-12-11 08:26:19,614 - utils.py[line:54] - INFO: best_unseen  0.5785| best_seen  0.6325| AUC  0.2988| best_hm  0.4602| attr_acc  0.4856| obj_acc  0.7327| 
+2022-12-11 08:26:19,618 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 08:26:46,223 - utils.py[line:54] - INFO: best_unseen  0.5785| best_seen  0.6325| AUC  0.2988| best_hm  0.4602| attr_acc  0.4856| obj_acc  0.7327| 
+2022-12-11 08:27:40,183 - utils.py[line:54] - INFO: best_unseen  0.5638| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.3507| obj_acc  0.5358| 
+2022-12-11 08:27:40,185 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:29:24,198 - utils.py[line:54] - INFO: best_unseen  0.5374| best_seen  0.3368| AUC  0.1558| best_hm  0.3269| attr_acc  0.3631| obj_acc  0.5683| 
+2022-12-11 08:29:24,206 - utils.py[line:54] - INFO: Loss average on val dataset: 3.294921875
+2022-12-11 08:30:34,348 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:31:04,706 - utils.py[line:54] - INFO: best_unseen  0.6303| best_seen  0.6556| AUC  0.357| best_hm  0.4957| attr_acc  0.3547| obj_acc  0.827| 
+2022-12-11 08:31:04,708 - utils.py[line:54] - INFO: Loss average on val dataset: 2.568359375
+2022-12-11 08:31:31,731 - utils.py[line:54] - INFO: best_unseen  0.6039| best_seen  0.6461| AUC  0.3087| best_hm  0.4577| attr_acc  0.5003| obj_acc  0.7111| 
+2022-12-11 08:31:31,733 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 08:31:35,517 - utils.py[line:54] - INFO: best_unseen  0.4914| best_seen  0.3634| AUC  0.1479| best_hm  0.3126| attr_acc  0.3624| obj_acc  0.553| 
+2022-12-11 08:31:35,527 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 08:31:59,237 - utils.py[line:54] - INFO: best_unseen  0.6039| best_seen  0.6461| AUC  0.3087| best_hm  0.4577| attr_acc  0.5003| obj_acc  0.7111| 
+2022-12-11 08:33:45,799 - utils.py[line:54] - INFO: best_unseen  0.4914| best_seen  0.3634| AUC  0.1479| best_hm  0.3126| attr_acc  0.3624| obj_acc  0.553| 
+2022-12-11 08:36:12,061 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:36:47,530 - utils.py[line:54] - INFO: best_unseen  0.6594| best_seen  0.6454| AUC  0.3745| best_hm  0.5216| attr_acc  0.3681| obj_acc  0.8255| 
+2022-12-11 08:36:47,534 - utils.py[line:54] - INFO: Loss average on val dataset: 2.44140625
+2022-12-11 08:37:21,067 - utils.py[line:54] - INFO: best_unseen  0.6504| best_seen  0.6344| AUC  0.3195| best_hm  0.4575| attr_acc  0.5281| obj_acc  0.7217| 
+2022-12-11 08:37:21,069 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 08:37:55,342 - utils.py[line:54] - INFO: best_unseen  0.6504| best_seen  0.6344| AUC  0.3195| best_hm  0.4575| attr_acc  0.5281| obj_acc  0.7217| 
+2022-12-11 08:42:34,238 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:43:10,774 - utils.py[line:54] - INFO: best_unseen  0.6487| best_seen  0.667| AUC  0.3833| best_hm  0.5227| attr_acc  0.3712| obj_acc  0.8295| 
+2022-12-11 08:43:10,776 - utils.py[line:54] - INFO: Loss average on val dataset: 2.470703125
+2022-12-11 08:43:43,216 - utils.py[line:54] - INFO: best_unseen  0.6314| best_seen  0.6461| AUC  0.3305| best_hm  0.4765| attr_acc  0.5165| obj_acc  0.7196| 
+2022-12-11 08:48:10,060 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:48:45,511 - utils.py[line:54] - INFO: best_unseen  0.6577| best_seen  0.6899| AUC  0.4113| best_hm  0.5569| attr_acc  0.3715| obj_acc  0.8279| 
+2022-12-11 08:48:45,513 - utils.py[line:54] - INFO: Loss average on val dataset: 2.46875
+2022-12-11 08:49:19,415 - utils.py[line:54] - INFO: best_unseen  0.6304| best_seen  0.6422| AUC  0.3215| best_hm  0.4626| attr_acc  0.5072| obj_acc  0.722| 
+2022-12-11 08:53:38,986 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:54:14,595 - utils.py[line:54] - INFO: best_unseen  0.6816| best_seen  0.6328| AUC  0.389| best_hm  0.5413| attr_acc  0.3796| obj_acc  0.8183| 
+2022-12-11 08:54:14,597 - utils.py[line:54] - INFO: Loss average on val dataset: 2.455078125
+2022-12-11 08:54:47,346 - utils.py[line:54] - INFO: best_unseen  0.6462| best_seen  0.6579| AUC  0.3353| best_hm  0.4754| attr_acc  0.5237| obj_acc  0.7176| 
+2022-12-11 08:59:17,266 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 08:59:55,867 - utils.py[line:54] - INFO: best_unseen  0.6782| best_seen  0.6648| AUC  0.4095| best_hm  0.5603| attr_acc  0.3759| obj_acc  0.8292| 
+2022-12-11 08:59:55,869 - utils.py[line:54] - INFO: Loss average on val dataset: 2.44921875
+2022-12-11 09:00:28,246 - utils.py[line:54] - INFO: best_unseen  0.6393| best_seen  0.6432| AUC  0.3262| best_hm  0.4736| attr_acc  0.4979| obj_acc  0.7224| 
+2022-12-11 09:03:10,860 - utils.py[line:54] - INFO: best_unseen  0.5848| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.3681| obj_acc  0.5432| 
+2022-12-11 09:03:10,862 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:04:44,672 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:05:03,706 - utils.py[line:54] - INFO: best_unseen  0.5564| best_seen  0.3785| AUC  0.182| best_hm  0.3571| attr_acc  0.3861| obj_acc  0.5774| 
+2022-12-11 09:05:03,713 - utils.py[line:54] - INFO: Loss average on val dataset: 3.1796875
+2022-12-11 09:05:22,051 - utils.py[line:54] - INFO: best_unseen  0.6697| best_seen  0.6602| AUC  0.3968| best_hm  0.5447| attr_acc  0.3749| obj_acc  0.8332| 
+2022-12-11 09:05:22,053 - utils.py[line:54] - INFO: Loss average on val dataset: 2.451171875
+2022-12-11 09:05:53,041 - utils.py[line:54] - INFO: best_unseen  0.6372| best_seen  0.6354| AUC  0.3205| best_hm  0.4692| attr_acc  0.5021| obj_acc  0.7159| 
+2022-12-11 09:07:20,135 - utils.py[line:54] - INFO: best_unseen  0.5037| best_seen  0.4034| AUC  0.1687| best_hm  0.3342| attr_acc  0.3798| obj_acc  0.559| 
+2022-12-11 09:07:20,144 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 09:09:32,439 - utils.py[line:54] - INFO: best_unseen  0.5037| best_seen  0.4034| AUC  0.1687| best_hm  0.3342| attr_acc  0.3798| obj_acc  0.559| 
+2022-12-11 09:09:38,799 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:10:14,864 - utils.py[line:54] - INFO: best_unseen  0.6718| best_seen  0.675| AUC  0.4106| best_hm  0.563| attr_acc  0.3737| obj_acc  0.8307| 
+2022-12-11 09:10:14,866 - utils.py[line:54] - INFO: Loss average on val dataset: 2.4375
+2022-12-11 09:10:46,222 - utils.py[line:54] - INFO: best_unseen  0.6383| best_seen  0.6334| AUC  0.3207| best_hm  0.4619| attr_acc  0.5| obj_acc  0.7117| 
+2022-12-11 09:10:46,224 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 09:11:18,601 - utils.py[line:54] - INFO: best_unseen  0.6383| best_seen  0.6334| AUC  0.3207| best_hm  0.4619| attr_acc  0.5| obj_acc  0.7117| 
+2022-12-11 09:16:01,859 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:16:37,992 - utils.py[line:54] - INFO: best_unseen  0.6812| best_seen  0.6762| AUC  0.4213| best_hm  0.5736| attr_acc  0.3752| obj_acc  0.8342| 
+2022-12-11 09:16:37,995 - utils.py[line:54] - INFO: Loss average on val dataset: 2.470703125
+2022-12-11 09:17:10,375 - utils.py[line:54] - INFO: best_unseen  0.6404| best_seen  0.65| AUC  0.3332| best_hm  0.4772| attr_acc  0.4997| obj_acc  0.7258| 
+2022-12-11 09:21:29,207 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:22:04,691 - utils.py[line:54] - INFO: best_unseen  0.6834| best_seen  0.6693| AUC  0.4165| best_hm  0.5685| attr_acc  0.3799| obj_acc  0.8292| 
+2022-12-11 09:22:04,693 - utils.py[line:54] - INFO: Loss average on val dataset: 2.4296875
+2022-12-11 09:22:36,314 - utils.py[line:54] - INFO: best_unseen  0.6404| best_seen  0.6481| AUC  0.3286| best_hm  0.4693| attr_acc  0.5106| obj_acc  0.721| 
+2022-12-11 09:22:36,316 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 09:23:10,051 - utils.py[line:54] - INFO: best_unseen  0.6404| best_seen  0.6481| AUC  0.3286| best_hm  0.4693| attr_acc  0.5106| obj_acc  0.721| 
+2022-12-11 09:27:38,741 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:28:14,420 - utils.py[line:54] - INFO: best_unseen  0.6859| best_seen  0.6727| AUC  0.4209| best_hm  0.5806| attr_acc  0.3783| obj_acc  0.8332| 
+2022-12-11 09:28:14,422 - utils.py[line:54] - INFO: Loss average on val dataset: 2.41015625
+2022-12-11 09:28:46,910 - utils.py[line:54] - INFO: best_unseen  0.6356| best_seen  0.6491| AUC  0.328| best_hm  0.4708| attr_acc  0.4983| obj_acc  0.7251| 
+2022-12-11 09:28:46,912 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 09:29:20,411 - utils.py[line:54] - INFO: best_unseen  0.6356| best_seen  0.6491| AUC  0.328| best_hm  0.4708| attr_acc  0.4983| obj_acc  0.7251| 
+2022-12-11 09:33:56,893 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:34:33,938 - utils.py[line:54] - INFO: best_unseen  0.6868| best_seen  0.6773| AUC  0.424| best_hm  0.5763| attr_acc  0.3749| obj_acc  0.8317| 
+2022-12-11 09:34:33,940 - utils.py[line:54] - INFO: Loss average on val dataset: 2.435546875
+2022-12-11 09:35:08,514 - utils.py[line:54] - INFO: best_unseen  0.6404| best_seen  0.6471| AUC  0.3327| best_hm  0.4736| attr_acc  0.5003| obj_acc  0.7244| 
+2022-12-11 09:38:59,282 - utils.py[line:54] - INFO: best_unseen  0.5873| best_seen  nan| AUC  nan| best_hm  nan| attr_acc  0.3791| obj_acc  0.5389| 
+2022-12-11 09:38:59,284 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:39:28,178 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:40:04,300 - utils.py[line:54] - INFO: best_unseen  0.6842| best_seen  0.6648| AUC  0.4146| best_hm  0.572| attr_acc  0.378| obj_acc  0.8292| 
+2022-12-11 09:40:04,302 - utils.py[line:54] - INFO: Loss average on val dataset: 2.41796875
+2022-12-11 09:40:36,825 - utils.py[line:54] - INFO: best_unseen  0.643| best_seen  0.6442| AUC  0.3293| best_hm  0.4722| attr_acc  0.5027| obj_acc  0.7241| 
+2022-12-11 09:41:00,993 - utils.py[line:54] - INFO: best_unseen  0.5566| best_seen  0.3937| AUC  0.1904| best_hm  0.3666| attr_acc  0.3953| obj_acc  0.5794| 
+2022-12-11 09:41:00,999 - utils.py[line:54] - INFO: Loss average on val dataset: 3.142578125
+2022-12-11 09:43:18,876 - utils.py[line:54] - INFO: best_unseen  0.5087| best_seen  0.4218| AUC  0.1779| best_hm  0.345| attr_acc  0.3864| obj_acc  0.5551| 
+2022-12-11 09:43:18,885 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 09:44:39,388 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:45:15,415 - utils.py[line:54] - INFO: best_unseen  0.6859| best_seen  0.6613| AUC  0.4134| best_hm  0.5705| attr_acc  0.3811| obj_acc  0.8258| 
+2022-12-11 09:45:15,417 - utils.py[line:54] - INFO: Loss average on val dataset: 2.400390625
+2022-12-11 09:45:41,502 - utils.py[line:54] - INFO: best_unseen  0.5087| best_seen  0.4218| AUC  0.1779| best_hm  0.345| attr_acc  0.3864| obj_acc  0.5551| 
+2022-12-11 09:45:47,526 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 09:45:47,528 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 09:46:19,154 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 09:50:54,546 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:51:30,138 - utils.py[line:54] - INFO: best_unseen  0.6821| best_seen  0.6773| AUC  0.4234| best_hm  0.5786| attr_acc  0.3793| obj_acc  0.8301| 
+2022-12-11 09:51:30,140 - utils.py[line:54] - INFO: Loss average on val dataset: 2.427734375
+2022-12-11 09:52:02,010 - utils.py[line:54] - INFO: best_unseen  0.6351| best_seen  0.6432| AUC  0.3271| best_hm  0.4709| attr_acc  0.4952| obj_acc  0.7224| 
+2022-12-11 09:56:15,701 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 09:56:50,895 - utils.py[line:54] - INFO: best_unseen  0.6834| best_seen  0.6796| AUC  0.4234| best_hm  0.5785| attr_acc  0.379| obj_acc  0.8317| 
+2022-12-11 09:56:50,897 - utils.py[line:54] - INFO: Loss average on val dataset: 2.431640625
+2022-12-11 09:57:25,445 - utils.py[line:54] - INFO: best_unseen  0.6415| best_seen  0.6432| AUC  0.3283| best_hm  0.4701| attr_acc  0.4993| obj_acc  0.7234| 
+2022-12-11 10:01:37,224 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 10:02:14,452 - utils.py[line:54] - INFO: best_unseen  0.6851| best_seen  0.6693| AUC  0.4162| best_hm  0.5683| attr_acc  0.3815| obj_acc  0.8292| 
+2022-12-11 10:02:14,454 - utils.py[line:54] - INFO: Loss average on val dataset: 2.419921875
+2022-12-11 10:02:46,161 - utils.py[line:54] - INFO: best_unseen  0.6436| best_seen  0.6432| AUC  0.3285| best_hm  0.4708| attr_acc  0.4986| obj_acc  0.722| 
+2022-12-11 10:06:58,945 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 10:07:42,184 - utils.py[line:54] - INFO: best_unseen  0.6864| best_seen  0.667| AUC  0.4164| best_hm  0.5717| attr_acc  0.379| obj_acc  0.8301| 
+2022-12-11 10:07:42,188 - utils.py[line:54] - INFO: Loss average on val dataset: 2.421875
+2022-12-11 10:08:17,872 - utils.py[line:54] - INFO: best_unseen  0.6452| best_seen  0.6442| AUC  0.3313| best_hm  0.4726| attr_acc  0.4983| obj_acc  0.7231| 
+2022-12-11 10:12:43,340 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 10:13:20,358 - utils.py[line:54] - INFO: best_unseen  0.6859| best_seen  0.6693| AUC  0.4179| best_hm  0.574| attr_acc  0.3796| obj_acc  0.8311| 
+2022-12-11 10:13:20,360 - utils.py[line:54] - INFO: Loss average on val dataset: 2.419921875
+2022-12-11 10:13:52,324 - utils.py[line:54] - INFO: best_unseen  0.6446| best_seen  0.6432| AUC  0.3298| best_hm  0.4717| attr_acc  0.5003| obj_acc  0.7234| 
+2022-12-11 10:13:52,326 - utils.py[line:54] - INFO: Evaluating test dataset on Closed World
+2022-12-11 10:14:26,278 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 10:14:34,005 - utils.py[line:54] - INFO: done!
+2022-12-11 10:15:56,423 - utils.py[line:54] - INFO: best_unseen  0.5902| best_seen  0.8101| AUC  0.461| best_hm  0.6239| attr_acc  0.3732| obj_acc  0.5427| 
+2022-12-11 10:15:56,425 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 10:17:29,837 - utils.py[line:54] - INFO: best_unseen  0.5596| best_seen  0.4013| AUC  0.1941| best_hm  0.3674| attr_acc  0.399| obj_acc  0.5783| 
+2022-12-11 10:17:29,848 - utils.py[line:54] - INFO: Loss average on val dataset: 3.13671875
+2022-12-11 10:19:24,294 - utils.py[line:54] - INFO: best_unseen  0.508| best_seen  0.4227| AUC  0.1792| best_hm  0.3456| attr_acc  0.3876| obj_acc  0.5561| 
+2022-12-11 10:19:24,305 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 10:21:21,349 - utils.py[line:54] - INFO: best_unseen  0.508| best_seen  0.4227| AUC  0.1792| best_hm  0.3456| attr_acc  0.3876| obj_acc  0.5561| 
+2022-12-11 10:46:21,894 - utils.py[line:54] - INFO: best_unseen  0.596| best_seen  0.8101| AUC  0.4506| best_hm  0.614| attr_acc  0.386| obj_acc  0.5451| 
+2022-12-11 10:46:21,896 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 10:47:57,835 - utils.py[line:54] - INFO: best_unseen  0.5596| best_seen  0.4121| AUC  0.1992| best_hm  0.3728| attr_acc  0.399| obj_acc  0.5766| 
+2022-12-11 10:47:57,842 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 10:49:58,150 - utils.py[line:54] - INFO: best_unseen  0.5107| best_seen  0.434| AUC  0.1831| best_hm  0.3484| attr_acc  0.3897| obj_acc  0.5554| 
+2022-12-11 10:49:58,159 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 10:51:56,007 - utils.py[line:54] - INFO: best_unseen  0.5107| best_seen  0.434| AUC  0.1831| best_hm  0.3484| attr_acc  0.3897| obj_acc  0.5554| 
+2022-12-11 11:17:46,995 - utils.py[line:54] - INFO: best_unseen  0.5862| best_seen  0.7722| AUC  0.4356| best_hm  0.6128| attr_acc  0.3711| obj_acc  0.5376| 
+2022-12-11 11:17:46,996 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 11:19:23,563 - utils.py[line:54] - INFO: best_unseen  0.5573| best_seen  0.423| AUC  0.204| best_hm  0.3796| attr_acc  0.4| obj_acc  0.5802| 
+2022-12-11 11:19:23,570 - utils.py[line:54] - INFO: Loss average on val dataset: 3.134765625
+2022-12-11 11:21:21,463 - utils.py[line:54] - INFO: best_unseen  0.5085| best_seen  0.4353| AUC  0.184| best_hm  0.3492| attr_acc  0.3915| obj_acc  0.557| 
+2022-12-11 11:47:56,041 - utils.py[line:54] - INFO: best_unseen  0.5941| best_seen  0.7848| AUC  0.4499| best_hm  0.6119| attr_acc  0.3821| obj_acc  0.5419| 
+2022-12-11 11:47:56,047 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 11:49:31,099 - utils.py[line:54] - INFO: best_unseen  0.5576| best_seen  0.4181| AUC  0.2013| best_hm  0.378| attr_acc  0.3998| obj_acc  0.5779| 
+2022-12-11 11:49:31,106 - utils.py[line:54] - INFO: Loss average on val dataset: 3.125
+2022-12-11 11:51:28,910 - utils.py[line:54] - INFO: best_unseen  0.5093| best_seen  0.4374| AUC  0.1848| best_hm  0.3514| attr_acc  0.3922| obj_acc  0.5535| 
+2022-12-11 11:51:28,918 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 11:53:33,793 - utils.py[line:54] - INFO: best_unseen  0.5093| best_seen  0.4374| AUC  0.1848| best_hm  0.3514| attr_acc  0.3922| obj_acc  0.5535| 
+2022-12-11 12:21:20,983 - utils.py[line:54] - INFO: best_unseen  0.5905| best_seen  0.7468| AUC  0.4307| best_hm  0.6201| attr_acc  0.3761| obj_acc  0.5369| 
+2022-12-11 12:21:20,985 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 12:22:56,587 - utils.py[line:54] - INFO: best_unseen  0.5595| best_seen  0.4197| AUC  0.2031| best_hm  0.3797| attr_acc  0.4005| obj_acc  0.5787| 
+2022-12-11 12:22:56,594 - utils.py[line:54] - INFO: Loss average on val dataset: 3.134765625
+2022-12-11 12:24:56,737 - utils.py[line:54] - INFO: best_unseen  0.511| best_seen  0.442| AUC  0.1873| best_hm  0.3541| attr_acc  0.3917| obj_acc  0.5548| 
+2022-12-11 12:46:08,854 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 12:46:23,080 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 12:47:06,973 - utils.py[line:54] - INFO: best_unseen  0.486| best_seen  0.2483| AUC  0.081| best_hm  0.2193| attr_acc  0.3689| obj_acc  0.5731| 
+2022-12-11 12:47:13,668 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 12:48:07,748 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 12:53:05,583 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 12:53:51,133 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 12:54:13,222 - utils.py[line:54] - INFO: best_unseen  0.5934| best_seen  0.7848| AUC  0.4528| best_hm  0.6219| attr_acc  0.3763| obj_acc  0.5384| 
+2022-12-11 12:54:13,224 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 12:55:46,977 - utils.py[line:54] - INFO: best_unseen  0.5587| best_seen  0.423| AUC  0.2042| best_hm  0.3801| attr_acc  0.4031| obj_acc  0.5769| 
+2022-12-11 12:55:46,983 - utils.py[line:54] - INFO: Loss average on val dataset: 3.12890625
+2022-12-11 12:57:44,695 - utils.py[line:54] - INFO: best_unseen  0.5109| best_seen  0.4445| AUC  0.1888| best_hm  0.3556| attr_acc  0.3924| obj_acc  0.5535| 
+2022-12-11 13:27:55,031 - utils.py[line:54] - INFO: best_unseen  0.5877| best_seen  0.8228| AUC  0.4678| best_hm  0.6226| attr_acc  0.3776| obj_acc  0.541| 
+2022-12-11 13:27:55,033 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 13:29:28,791 - utils.py[line:54] - INFO: best_unseen  0.5585| best_seen  0.423| AUC  0.204| best_hm  0.38| attr_acc  0.4034| obj_acc  0.5775| 
+2022-12-11 13:29:28,797 - utils.py[line:54] - INFO: Loss average on val dataset: 3.12890625
+2022-12-11 13:31:28,633 - utils.py[line:54] - INFO: best_unseen  0.5113| best_seen  0.4445| AUC  0.1889| best_hm  0.3562| attr_acc  0.393| obj_acc  0.5537| 
+2022-12-11 14:02:38,064 - utils.py[line:54] - INFO: best_unseen  0.5877| best_seen  0.8228| AUC  0.4642| best_hm  0.6322| attr_acc  0.3826| obj_acc  0.5289| 
+2022-12-11 14:02:38,072 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 14:04:14,044 - utils.py[line:54] - INFO: best_unseen  0.5602| best_seen  0.4268| AUC  0.2068| best_hm  0.3842| attr_acc  0.4033| obj_acc  0.5775| 
+2022-12-11 14:04:14,051 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 14:06:14,237 - utils.py[line:54] - INFO: best_unseen  0.5118| best_seen  0.4437| AUC  0.1893| best_hm  0.3565| attr_acc  0.3934| obj_acc  0.5552| 
+2022-12-11 14:38:32,839 - utils.py[line:54] - INFO: best_unseen  0.5903| best_seen  0.7595| AUC  0.4357| best_hm  0.62| attr_acc  0.3706| obj_acc  0.5343| 
+2022-12-11 14:38:32,846 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 14:40:08,364 - utils.py[line:54] - INFO: best_unseen  0.5583| best_seen  0.4284| AUC  0.2069| best_hm  0.3834| attr_acc  0.4045| obj_acc  0.5775| 
+2022-12-11 14:40:08,371 - utils.py[line:54] - INFO: Loss average on val dataset: 3.12890625
+2022-12-11 14:42:07,161 - utils.py[line:54] - INFO: best_unseen  0.5104| best_seen  0.4462| AUC  0.1902| best_hm  0.3577| attr_acc  0.3935| obj_acc  0.5541| 
+2022-12-11 15:15:47,256 - utils.py[line:54] - INFO: best_unseen  0.5949| best_seen  0.7975| AUC  0.4591| best_hm  0.6319| attr_acc  0.3774| obj_acc  0.5397| 
+2022-12-11 15:15:47,263 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 15:17:22,806 - utils.py[line:54] - INFO: best_unseen  0.5584| best_seen  0.4268| AUC  0.2067| best_hm  0.383| attr_acc  0.4032| obj_acc  0.5771| 
+2022-12-11 15:17:22,813 - utils.py[line:54] - INFO: Loss average on val dataset: 3.12890625
+2022-12-11 15:19:22,191 - utils.py[line:54] - INFO: best_unseen  0.5113| best_seen  0.4462| AUC  0.19| best_hm  0.3573| attr_acc  0.3941| obj_acc  0.5544| 
+2022-12-11 15:53:39,073 - utils.py[line:54] - INFO: best_unseen  0.5915| best_seen  0.7468| AUC  0.4284| best_hm  0.6096| attr_acc  0.386| obj_acc  0.5374| 
+2022-12-11 15:53:39,081 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 15:55:10,058 - utils.py[line:54] - INFO: best_unseen  0.5596| best_seen  0.4273| AUC  0.2073| best_hm  0.3837| attr_acc  0.4052| obj_acc  0.5774| 
+2022-12-11 15:55:10,066 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 15:57:02,049 - utils.py[line:54] - INFO: best_unseen  0.5112| best_seen  0.4454| AUC  0.1898| best_hm  0.3574| attr_acc  0.3935| obj_acc  0.5541| 
+2022-12-11 16:31:28,870 - utils.py[line:54] - INFO: best_unseen  0.5915| best_seen  0.8228| AUC  0.47| best_hm  0.6251| attr_acc  0.376| obj_acc  0.5391| 
+2022-12-11 16:31:28,872 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 16:32:59,741 - utils.py[line:54] - INFO: best_unseen  0.559| best_seen  0.4273| AUC  0.2072| best_hm  0.3832| attr_acc  0.4033| obj_acc  0.5761| 
+2022-12-11 16:32:59,749 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 16:34:50,743 - utils.py[line:54] - INFO: best_unseen  0.5106| best_seen  0.4471| AUC  0.1898| best_hm  0.358| attr_acc  0.394| obj_acc  0.5538| 
+2022-12-11 17:07:06,881 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:07:52,293 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:10:30,138 - utils.py[line:54] - INFO: best_unseen  0.5913| best_seen  0.7975| AUC  0.4534| best_hm  0.6297| attr_acc  0.3791| obj_acc  0.5367| 
+2022-12-11 17:10:30,140 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 17:11:22,292 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:12:03,334 - utils.py[line:54] - INFO: best_unseen  0.5592| best_seen  0.4295| AUC  0.2084| best_hm  0.3853| attr_acc  0.4039| obj_acc  0.577| 
+2022-12-11 17:12:03,341 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 17:12:05,754 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:12:31,624 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:13:14,328 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:14:00,826 - utils.py[line:54] - INFO: best_unseen  0.512| best_seen  0.4466| AUC  0.1907| best_hm  0.3578| attr_acc  0.3943| obj_acc  0.5544| 
+2022-12-11 17:15:20,090 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:16:03,140 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:16:41,267 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:17:25,843 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:20:46,927 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:21:30,580 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:22:14,349 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:22:59,457 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:24:19,880 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_best.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:25:04,670 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 17:51:09,779 - utils.py[line:54] - INFO: best_unseen  0.6187| best_seen  0.6305| AUC  0.2563| best_hm  0.3912| attr_acc  0.4808| obj_acc  0.6585| 
+2022-12-11 17:51:09,780 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 17:51:47,824 - utils.py[line:54] - INFO: best_unseen  0.7219| best_seen  0.6146| AUC  0.4071| best_hm  0.5676| attr_acc  0.4113| obj_acc  0.799| 
+2022-12-11 17:51:47,826 - utils.py[line:54] - INFO: Loss average on val dataset: 2.34765625
+2022-12-11 17:52:20,132 - utils.py[line:54] - INFO: best_unseen  0.6187| best_seen  0.6305| AUC  0.2563| best_hm  0.3912| attr_acc  0.4808| obj_acc  0.6585| 
+2022-12-11 17:52:20,134 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 17:52:54,745 - utils.py[line:54] - INFO: best_unseen  0.6187| best_seen  0.6305| AUC  0.2563| best_hm  0.3912| attr_acc  0.4808| obj_acc  0.6585| 
+2022-12-11 17:53:06,271 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/SDZSL_epoch_19.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:53:59,621 - utils.py[line:54] - INFO: best_unseen  0.6446| best_seen  0.6432| AUC  0.3298| best_hm  0.4717| attr_acc  0.5003| obj_acc  0.7234| 
+2022-12-11 17:55:55,461 - utils.py[line:54] - INFO: Namespace(lr=0.0005, dataset='ut-zappos', weight_decay=1e-05, clip_model='ViT-L/14', epochs=20, epoch_start=0, train_batch_size=128, eval_batch_size=32, fusion='SDZSL', context_length=8, attr_dropout=0.3, save_path='data/model/ut-zappos/dfsp', save_every_n=5, save_model=True, load_model='data/model/ut-zappos/dfsp/final_model_SDZSL.pt', seed=2134, gradient_accumulation_steps=2, open_world=True, bias=0.001, topk=1, text_encoder_batch_size=36, threshold=0.4, threshold_trials=50, K=1, prompt_template='a photo of x x', res_w=0.8, SA_K=1, width_img=1024, width_txt=768, dataset_path='../../../dataset/ut-zappos', best_model_metric='best_loss', att_obj_w=0.01, sp_w=0.1)
+2022-12-11 17:56:45,581 - utils.py[line:54] - INFO: best_unseen  0.6388| best_seen  0.6471| AUC  0.3297| best_hm  0.4693| attr_acc  0.5055| obj_acc  0.7207| 
+2022-12-11 18:00:53,613 - utils.py[line:54] - INFO: best_unseen  0.5883| best_seen  0.7975| AUC  0.4584| best_hm  0.6178| attr_acc  0.3786| obj_acc  0.5337| 
+2022-12-11 18:00:53,615 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 18:02:48,310 - utils.py[line:54] - INFO: best_unseen  0.5589| best_seen  0.4306| AUC  0.2081| best_hm  0.3834| attr_acc  0.4047| obj_acc  0.5763| 
+2022-12-11 18:02:48,321 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 18:05:16,404 - utils.py[line:54] - INFO: best_unseen  0.5106| best_seen  0.4475| AUC  0.19| best_hm  0.358| attr_acc  0.3945| obj_acc  0.5541| 
+2022-12-11 18:10:00,992 - utils.py[line:54] - INFO: best_unseen  0.5997| best_seen  0.6325| AUC  0.2578| best_hm  0.3941| attr_acc  0.4732| obj_acc  0.6565| 
+2022-12-11 18:10:00,994 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 18:10:30,150 - utils.py[line:54] - INFO: best_unseen  0.721| best_seen  0.6408| AUC  0.4234| best_hm  0.574| attr_acc  0.3964| obj_acc  0.8074| 
+2022-12-11 18:10:30,152 - utils.py[line:54] - INFO: Loss average on val dataset: 2.46875
+2022-12-11 18:10:57,006 - utils.py[line:54] - INFO: best_unseen  0.5997| best_seen  0.6325| AUC  0.2578| best_hm  0.3941| attr_acc  0.4732| obj_acc  0.6565| 
+2022-12-11 18:10:57,008 - utils.py[line:54] - INFO: Evaluating test dataset:
+2022-12-11 18:11:24,013 - utils.py[line:54] - INFO: best_unseen  0.5997| best_seen  0.6325| AUC  0.2578| best_hm  0.3941| attr_acc  0.4732| obj_acc  0.6565| 
+2022-12-11 18:47:03,335 - utils.py[line:54] - INFO: best_unseen  0.5935| best_seen  0.8228| AUC  0.4665| best_hm  0.6322| attr_acc  0.3841| obj_acc  0.5374| 
+2022-12-11 18:47:03,337 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 18:48:38,445 - utils.py[line:54] - INFO: best_unseen  0.5585| best_seen  0.43| AUC  0.2079| best_hm  0.3837| attr_acc  0.4038| obj_acc  0.5758| 
+2022-12-11 18:48:38,451 - utils.py[line:54] - INFO: Loss average on val dataset: 3.134765625
+2022-12-11 18:50:36,341 - utils.py[line:54] - INFO: best_unseen  0.5104| best_seen  0.4475| AUC  0.1905| best_hm  0.3575| attr_acc  0.3932| obj_acc  0.554| 
+2022-12-11 19:32:57,278 - utils.py[line:54] - INFO: best_unseen  0.5888| best_seen  0.7975| AUC  0.4568| best_hm  0.6394| attr_acc  0.3825| obj_acc  0.5343| 
+2022-12-11 19:32:57,280 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 19:34:31,833 - utils.py[line:54] - INFO: best_unseen  0.5588| best_seen  0.4322| AUC  0.2087| best_hm  0.3842| attr_acc  0.4051| obj_acc  0.5763| 
+2022-12-11 19:34:31,840 - utils.py[line:54] - INFO: Loss average on val dataset: 3.130859375
+2022-12-11 19:36:31,632 - utils.py[line:54] - INFO: best_unseen  0.5113| best_seen  0.4462| AUC  0.1902| best_hm  0.3571| attr_acc  0.3942| obj_acc  0.5546| 
+2022-12-11 20:21:00,196 - utils.py[line:54] - INFO: best_unseen  0.5856| best_seen  0.7975| AUC  0.4507| best_hm  0.6128| attr_acc  0.3817| obj_acc  0.536| 
+2022-12-11 20:21:00,202 - utils.py[line:54] - INFO: Evaluating val dataset:
+2022-12-11 20:22:35,937 - utils.py[line:54] - INFO: best_unseen  0.5591| best_seen  0.4322| AUC  0.2092| best_hm  0.385| attr_acc  0.4041| obj_acc  0.576| 
+2022-12-11 20:22:35,944 - utils.py[line:54] - INFO: Loss average on val dataset: 3.134765625
+2022-12-11 20:24:34,840 - utils.py[line:54] - INFO: best_unseen  0.5107| best_seen  0.4483| AUC  0.1905| best_hm  0.3584| attr_acc  0.3941| obj_acc  0.5549| 
+2022-12-11 20:24:34,848 - utils.py[line:54] - INFO: Evaluating test dataset on Closed World
+2022-12-11 20:26:35,124 - utils.py[line:54] - INFO: best_unseen  0.5093| best_seen  0.4374| AUC  0.1848| best_hm  0.3514| attr_acc  0.3922| obj_acc  0.5535| 
+2022-12-11 20:26:35,132 - utils.py[line:54] - INFO: done!
